@@ -4,7 +4,7 @@
 
 **Research proposal and pre-analysis plan**  
 **Status:** Study design  
-**Author:** [Name]  
+**Author:** Mark Mavis
 **Date:** August 2026
 
 ---
@@ -36,21 +36,21 @@ The project does not treat historical outperformance as proof of forecasting abi
 
 The primary horizon-comparison hypotheses are:
 
-\[
+$$
 H_0: p_5=p_6=\cdots=p_{20}
-\]
+$$
 
-\[
+$$
 H_A: \text{At least one horizon has a different probability of outperformance.}
-\]
+$$
 
-Here, \(p_h\) is the probability that a sampled stock outperforms the benchmark over a window of \(h\) trading days.
+Here, $p_h$ is the probability that a sampled stock outperforms the benchmark over a window of $h$ trading days.
 
 A secondary test at each horizon considers:
 
-\[
+$$
 H_{0,h}: p_h=0.50
-\]
+$$
 
 This 50% reference point is useful for interpretation, but it is not automatically the theoretically correct probability for a capitalization-weighted index. The index's weighting, the distribution of individual-stock returns, and the selected stock universe may cause the expected proportion to differ from one-half.
 
