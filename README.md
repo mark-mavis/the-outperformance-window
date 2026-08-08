@@ -85,50 +85,50 @@ Missing observations, trading suspensions, ticker changes, mergers, and delistin
 
 ### 5.1 Horizon returns
 
-For stock \(i\), date \(t\), and horizon \(h\), the trailing adjusted-price return is:
+For stock $i$, date $t$, and horizon $h$, the trailing adjusted-price return is:
 
-\[
+$$
 R_{i,t,h}=\frac{P^{adj}_{i,t}}{P^{adj}_{i,t-h}}-1,
 \qquad h\in\{5,6,\ldots,20\}.
-\]
+$$
 
 The benchmark return over the identical dates is:
 
-\[
+$$
 R_{m,t,h}=\frac{P^{adj}_{m,t}}{P^{adj}_{m,t-h}}-1.
-\]
+$$
 
 The stock's excess return is:
 
-\[
+$$
 ER_{i,t,h}=R_{i,t,h}-R_{m,t,h}.
-\]
+$$
 
 ### 5.2 Outperformance indicator
 
 The stock is classified as beating the market when its excess return is positive:
 
-\[
+$$
 Y_{i,t,h}=\mathbb{1}(ER_{i,t,h}>0).
-\]
+$$
 
 Ties will be coded separately and reported. A robustness analysis will require outperformance to exceed a small practical threshold, such as estimated transaction costs, rather than merely exceed zero.
 
 ### 5.3 Probability and odds
 
-For each horizon, the estimated outperformance probability is the proportion of eligible observations for which \(Y_{i,t,h}=1\):
+For each horizon, the estimated outperformance probability is the proportion of eligible observations for which $Y_{i,t,h}=1$:
 
-\[
+$$
 \hat p_h=\frac{1}{N_h}\sum_{i,t}Y_{i,t,h}.
-\]
+$$
 
 Formal odds will be calculated as:
 
-\[
+$$
 \widehat{Odds}_h=\frac{\hat p_h}{1-\hat p_h}.
-\]
+$$
 
-For example, a 60% estimated probability corresponds to odds of \(0.60/0.40=1.5\), or **1.5 to 1**. The report will present probabilities and odds separately to prevent the terms from being used interchangeably.
+For example, a 60% estimated probability corresponds to odds of $0.60/0.40=1.5$, or **1.5 to 1**. The report will present probabilities and odds separately to prevent the terms from being used interchangeably.
 
 ### 5.4 Aggregation
 
